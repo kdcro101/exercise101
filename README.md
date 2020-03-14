@@ -150,7 +150,18 @@ If form item valid, it will be stored in-memory using `AppFormsStore` class as i
 
 ### GET /api/forms/stats
 
+Endpoint responds with JSON containing current in-memory statistics.
 
+
+```ts
+interface AppFormsModuleStats {
+    forms_invalid: number;          // valid forms
+    forms_valid: number;            // invalid forms 
+    failures: number;               // num. of times server responded with error
+    cummulative_risk_score: number; // cummulative risk score
+    stored: number;                 // valid forms currently stored in memory
+}
+```
 
 
 
