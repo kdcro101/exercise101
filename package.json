@@ -1,0 +1,38 @@
+{
+  "name": "code-test",
+  "version": "0.0.1",
+  "description": "demo app",
+  "main": "index.js",
+  "scripts": {
+    "test": " rm -rf ./dist && tsc -p . && ./node_modules/.bin/jasmine --reporter=jasmine-console-reporter --config=./jasmine.json",
+    "build": "tsc -p .",
+    "clean": "rm -rvf dist/ output-*/",
+    "server": "node dist/server.js"
+  },
+  "author": "Domagoj",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/argparse": "1.0.38",
+    "@types/axios": "^0.14.0",
+    "@types/compression": "1.7.0",
+    "@types/express": "4.17.3",
+    "@types/http-status-codes": "1.2.0",
+    "@types/jasmine": "3.5.4",
+    "@types/moment": "2.13.0",
+    "@types/node": "13.7.4",
+    "jasmine": "3.5.0",
+    "jasmine-console-reporter": "3.1.0",
+    "jasmine-node": "3.0.0",
+    "jasmine-ts-console-reporter": "3.1.1",
+    "typescript": "3.7.5"
+  },
+  "dependencies": {
+    "axios": "0.19.2",
+    "argparse": "1.0.10",
+    "compression": "1.7.4",
+    "express": "4.17.1",
+    "http-status-codes": "1.4.0",
+    "moment": "2.24.0",
+    "rxjs": "6.5.4"
+  }
+}
